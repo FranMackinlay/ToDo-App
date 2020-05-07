@@ -9,10 +9,7 @@
 		"angular": "^1.7.5",
 		"angular-loader": "^1.7.5",
 		"angular-route": "^1.7.5",
-		"express": "^4.17.1",
-		"html5-boilerplate": "0.0.1",
-		"mongoose": "^5.9.12",
-		"nodemon": "^2.0.3"
+		"html5-boilerplate": "0.0.1"
 	},
 	"devDependencies": {
 		"angular-mocks": "^1.7.5",
