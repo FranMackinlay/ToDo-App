@@ -21,8 +21,6 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-
-
 router.post('/', async (req, res, next) => {
   try {
     const todoData = req.body;
@@ -37,6 +35,22 @@ router.post('/', async (req, res, next) => {
   }
 });
 
+router.put('/:id', async (req, res, next) => {
+  try {
+    const _id = req.params.id;
+
+    const todoUpdate = req.body;
+
+    const updatedTodo = await Todo.findOneAndUpdate({ _id }, todoUpdate, {
+      new: true,
+      useFindAndModify: false,
+    });
+
+    res.json({ result: updatedTodo });
+  } catch (err) {
+    next(err);
+  }
+});
 
 router.delete('/:id', async (req, res, next) => {
   try {
