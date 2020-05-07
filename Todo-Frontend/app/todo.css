@@ -1,21 +1,22 @@
 body {
 	background-color: #edf6ed;
+	background: url('./assets/images/background.jpg');
+	background-repeat: no-repeat;
 }
 .title {
-	margin: 0 auto;
+	margin: 50px auto;
 	width: fit-content;
 }
 #todo-list-component {
 	margin: 0 auto;
 	width: 400px;
-	border: 1px solid red;
 	padding: 15px;
 	border-radius: 20px;
-	background-color: #d4ecd5;
 }
 form {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin: 20px 0px 20px 0px;
 }
 .input-todo {
@@ -58,6 +59,8 @@ li {
 .list-group {
 	margin: 20px 0px 20px 0px;
 	padding: 0;
+	height: 49vh;
+	overflow: scroll;
 }
 .list-group-item {
 	display: flex;
