@@ -31,7 +31,7 @@ router.post('/', async (req, res, next) => {
 
     await newTodo.save();
 
-    res.status(201).json({ result: 'Ad created successfully', status: 201 });
+    res.status(201).json({ result: 'Todo created successfully', status: 201 });
   } catch (error) {
     next(error);
   }
