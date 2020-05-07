@@ -1,0 +1,13 @@
+<div id="todo-list-component">
+	<ul class="list-group container">
+		<li ng-repeat="todo in todoList.todos" class="list-item">
+			<div class="list-group-item">
+				<span class="done-{{todo.done}}">{{todo.text}}</span>
+				<div class="done-delete-container">
+					<input class="checkbox" type="checkbox" ng-model="todo.done" />
+					<button ng-click="todoList.archive()" class="delete-todo">Delete</button>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
