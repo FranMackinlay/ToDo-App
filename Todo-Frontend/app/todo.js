@@ -4,8 +4,7 @@
 angular.module('todoApp', [
   'ngRoute',
   'todoApp.view1',
-  'todoApp.view2',
-  'todoApp.version'
+  'todoApp.view2'
 ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
@@ -16,8 +15,9 @@ angular.module('todoApp', [])
   .controller('TodoListController', function () {
     const todoList = this;
     todoList.todos = [
-      { text: 'learn AngularJS', done: true },
-      { text: 'build an AngularJS app', done: false }];
+      { text: 'learn AngularJS', done: true, id: 1 },
+      { text: 'build an AngularJS app', done: false, id: 2 }
+    ];
 
     todoList.addTodo = function () {
       if (todoList.todoText) {
