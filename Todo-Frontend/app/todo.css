@@ -10,8 +10,11 @@ body {
 #todo-list-component {
 	margin: 0 auto;
 	width: 400px;
-	padding: 15px;
 	border-radius: 20px;
+}
+#todo-form-component {
+	width: 400px;
+	margin: 0 auto;
 }
 form {
 	display: flex;
@@ -71,15 +74,21 @@ li {
 .list-group-item:hover {
 	background-color: lightgray;
 }
-.checkbox {
-	cursor: pointer;
+.done-delete-container {
+	display: flex;
+	align-items: center;
+}
+.custom-control-input:checked ~ .custom-control-label:before {
+	background-color: #34a835;
+	border-color: #34a835;
+}
+i {
+	font-size: 16px;
+	color: tomato;
 }
 .delete-todo {
 	border-radius: 20px;
 	font-size: 11px;
-}
-.delete-todo:hover {
-	background-color: tomato;
 }
 .done-true {
 	text-decoration: line-through;
