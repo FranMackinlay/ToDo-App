@@ -24,7 +24,13 @@ const initTodos = async () => {
       todo: "Create Todo App",
     },
     {
-      todo: "Submit Todo App",
+      todo: "Edit Todo App",
+    },
+    {
+      todo: "Get Todo App",
+    },
+    {
+      todo: "Delete Todo App",
     },
   ]);
 };
