@@ -58,7 +58,7 @@ router.delete('/:id', async (req, res, next) => {
 
     await Todo.deleteOne({ _id });
 
-    res.json();
+    res.json({ result: 'Todo deleted succesfully' });
   } catch (err) {
     next(err);
   }
