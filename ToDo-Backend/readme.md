@@ -46,11 +46,6 @@ npm run dev
         "todo": "Submit Todo App",
         "__v": 0
     },
-    {
-        "_id": "5eb4594fbfaf731bce677b00",
-        "todo": "Preguntarle a gian cuando termine reunion",
-        "__v": 0
-    }
 ]
 ```
 
