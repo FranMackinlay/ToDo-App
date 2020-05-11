@@ -1,6 +1,6 @@
-<div id="todo-form-component">
+<div ng-controller="TodoFormController" id="todo-form-component">
 	<form ng-submit="todoList.addTodo()">
-		<input class="input-todo" type="text" ng-model="todoList.todoText" placeholder="Add new todo.." />
+		<input class="input-todo" type="text" ng-model="todoText" placeholder="Add new todo.." />
 		<div class="add-clearAll">
 			<button class="btn-primary" type="submit">Add</button>
 			<button class="btn-secondary" ng-click="todoList.archive()" class="delete-todo">Clear Done</button>
